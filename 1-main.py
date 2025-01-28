@@ -1,6 +1,6 @@
 name = "Nouman";
 
-print(f"Hello {name}");
+print(f"Hello {name}"); #f-string (used if need to print variables)
 
 isOnline = True;
 
