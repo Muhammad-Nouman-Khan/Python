@@ -37,3 +37,6 @@ elif temp <=0 and not is_sunny:
 elif 28 > temp > 0 and not is_sunny:
     print("Its Warm Outside")
     print("Its Cloudy")
+
+else:
+    print("IDK!")
