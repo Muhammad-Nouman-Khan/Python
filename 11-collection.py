@@ -33,3 +33,11 @@ cars = ("mercedes","bmw")
 
 print(cars.index("bmw"))
 print(cars.count("mercedes"))
+
+
+num_pad = ((1,2,3),(4,5,6),(7,8,9),("*","0","#"))
+
+for row in num_pad:
+    for num in row:
+        print(num,end=" ")
+    print()
