@@ -48,20 +48,46 @@
 
 # WORKING WITH LISTS
 
-magicians = ['alice', 'david', 'carolina']
-for magician in magicians:
-    print(f"{magician.title()}, that was a great trick!")
-    print(f"I can't wait to see your next trick, {magician.title()}.\n")
+# magicians = ['alice', 'david', 'carolina']
+# for magician in magicians:
+#     print(f"{magician.title()}, that was a great trick!")
+#     print(f"I can't wait to see your next trick, {magician.title()}.\n")
 
-print("Thank you, everyone. That was a great magic show!\n")
+# print("Thank you, everyone. That was a great magic show!\n")
 
-print("****************************")
+# print("****************************")
 
-for magician in magicians:
-    print(f"{magician.title()}, that was a great trick!")
-print(f"I can't wait to see your next trick, {magician.title()}.\n")
+# for magician in magicians:
+#     print(f"{magician.title()}, that was a great trick!")
+# print(f"I can't wait to see your next trick, {magician.title()}.\n")
 
-print("****************************")
+# print("****************************")
 
 #************************************************************
 
+# Using the range() Function
+
+for value in range(1,5):
+    print(value)
+
+#Using range() to Make a List of Numbers
+
+numbers = list(range(1,6))
+print(numbers)
+
+even_numbers = list(range(2,11,2))
+print(even_numbers)
+
+
+squares = []
+for value in range(1,11):
+    squares.append(value ** 2)
+
+print(squares)
+
+print(min(squares))
+print(max(squares))
+print(sum(squares))
+
+squares = [value ** 2 for value in range(1,11)]
+print(squares)
