@@ -124,3 +124,29 @@ friend_foods.append('biryani')
 
 print(my_foods)
 print(friend_foods)
+
+# Defining a Tuple (same as lists, only diff is: values cant be changed)
+
+dimensions = (200,50)
+print(dimensions[0])
+print(dimensions[1])
+
+# dimensions[0] = 250   # ERROR !!!
+
+
+# if tuple with only one element : 
+my_t = (3,)
+print(my_t[0])
+
+
+#You cannot modify a tuple, but you can assign a new value to a variable that represents a tuple.
+
+dimensions = (200, 50)
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+dimensions = (400, 100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
