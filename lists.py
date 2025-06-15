@@ -91,3 +91,36 @@ print(sum(squares))
 
 squares = [value ** 2 for value in range(1,11)]
 print(squares)
+
+
+players = ['ronaldo','messi','neymar','mbappe','kane']
+print(players[0:3])
+
+print(players[:4])
+
+print(players[2:])
+
+print(players[-3:])   #print last three players
+
+
+
+#Copying a List
+
+my_foods = ['pizza','falafel','carrot cake']
+friend_foods = my_foods[:]
+
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+
+print(my_foods)
+print(friend_foods)
+
+
+# now both points to the same list, change in one, affects the other.
+my_foods = friend_foods
+
+my_foods.append('rice')
+friend_foods.append('biryani')
+
+print(my_foods)
+print(friend_foods)
