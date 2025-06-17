@@ -149,3 +149,29 @@ print(f"Total number of aliens: {len(aliens)}")
 
 print("\n*****************************")
 
+# A List in a Dictionary
+
+pizza = {
+    'crust' : 'thick',
+    'toppings' : ['mushrooms','extra cheese']
+}
+
+print(f"You ordered a {pizza['crust']}-crust pizza with the following toppings : ")
+
+for topping in pizza['toppings']:
+    print("\t" + topping)
+
+print("\n*****************************")
+
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
+}
+
+for name,languages in favorite_languages.items():
+    print(f"\n{name.title()}'s favourite languages are:")
+
+    for language in languages:
+        print(f"\t{language.title()}")
