@@ -18,3 +18,8 @@ ic.make_icecream('strawberry', 'fresh fruit', 'chocolate syrup')
 from icecream import make_icecream as mc
 # Now you can use the make_icecream function with the alias
 mc('mint', 'oreo crumbs', 'chocolate flakes')
+
+# You can also import all functions from the module
+from icecream import *
+# Now you can use all functions defined in the icecream module without a prefix
+make_icecream('cookie dough', 'caramel bits', 'marshmallows')
