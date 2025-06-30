@@ -35,3 +35,31 @@ print_models(unprinted_designs, completed_models)
 # )
 
 show_completed_models(completed_models)
+
+
+
+# **********************
+
+# Passing an Arbitrary Number of Arguments
+
+def make_pizza(*toppings):
+    """Print the list of toppings that have been requested."""
+
+    print("\nMaking a pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+# Using Arbitrary Keyword Arguments
+
+def build_profile(first,last,**user_info):
+    """Build a dictionary containing everything we know about a user."""
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+user_profile = build_profile("Nouman","Younas",location='Pakistan',field='Software Engineer')
+
+print(user_profile)
