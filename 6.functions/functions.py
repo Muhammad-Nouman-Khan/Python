@@ -63,3 +63,8 @@ def build_profile(first,last,**user_info):
 user_profile = build_profile("Nouman","Younas",location='Pakistan',field='Software Engineer')
 
 print(user_profile)
+
+
+# Storing Your Functions in Modules
+
+
