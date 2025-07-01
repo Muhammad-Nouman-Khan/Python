@@ -16,3 +16,5 @@ print(dog.name)
 print(dog.age)
 dog.sit()
 dog.roll_over()
+dog.name = "Max"
+print(dog.name)
