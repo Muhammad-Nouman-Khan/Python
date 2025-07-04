@@ -65,6 +65,18 @@ user_profile = build_profile("Nouman","Younas",location='Pakistan',field='Softwa
 print(user_profile)
 
 
-# Storing Your Functions in Modules
+
+
+def switch_case(value):
+    options = {
+        'a': "You selected A",
+        'b': "You selected B",
+        'c': "You selected C"
+    }
+    return options.get(value, "Invalid option")
+
+# Example usage
+choice = input("Enter a choice (a/b/c): ")
+print(switch_case(choice))
 
 
